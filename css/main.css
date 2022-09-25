@@ -1,4 +1,4 @@
-/*** Start variables */
+/**! Start variables */
 :root{
     --main-color:#084f5a;
     --second-color:#38737f;
@@ -7,12 +7,18 @@
     --fivth-color:#c2edf7;
 }
 
-/**End variables*/
-/* * Global Rules */
+/* !End variables*/
+/* ! Global Rules */
 * {
     box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth !important;
+    -webkit-scroll-behavior: smooth ;
+    -moz-scroll-behavior: smooth;
+
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -45,7 +51,7 @@ body {
             width: 1170px;
         }
 }
-/*? Ends Global Rules*/
+/*! Ends Global Rules*/
 
 .header{
     padding: 15px;
@@ -415,3 +421,104 @@ body {
 }
 
 /**! End about */
+/**! Start Contact */
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6f6;
+}
+
+.contact .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--second-color);
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.contact .info .link {
+    display: block;
+    text-decoration: none;
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+.contact .info .social i {
+    margin-left: 10px;
+}
+
+.contact .info .social i:first-of-type:hover {
+    color: #007bb6;
+    cursor: pointer;
+    
+}
+
+.contact .info .social i:nth-child(2):hover {
+    color: #571e57;
+    cursor: pointer;
+}
+
+.contact .info .social i:last-of-type:hover {
+    cursor: pointer;
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media (max-width: 351px) {
+
+    .contact .info .label {
+        font-size: 25px;
+    }
+
+    .contact .info .link {
+        font-size: 15px;
+    }
+}
+
+/**! End Contact */
+/**! Start footer*/
+.footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.footer .text span {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #adf0ff;
+}
+
+@media (max-width: 364px) {
+    .footer {
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .footer .text span {
+        font-weight: bold;
+    }
+}
+/**! End Footer*/
